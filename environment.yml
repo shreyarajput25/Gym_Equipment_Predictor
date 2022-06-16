@@ -1,0 +1,14 @@
+name: equipPredictor
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy=1.19.2
+  - pip=21.0.1
+  - python=3.7.9
+  - pillow=8.4.0
+  - pip:
+      - torch
+      - torchvision
+      - flask
+prefix: /home/shreya/anaconda3/envs/equipPredictor

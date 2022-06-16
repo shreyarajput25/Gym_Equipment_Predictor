@@ -1,4 +1,4 @@
 __pycache__
 .history
-model/*
-staticFiles/uploads/
+!model/
+!staticFiles/uploads/

@@ -4,7 +4,12 @@ from werkzeug.utils import secure_filename
 import numpy as np
 from PIL import Image
 from image_predictor import predict_image
- 
+
+try:
+    os.makedirs('staticFiles/upload')
+except OSError as e:
+    print('exists')
+
 class_label = ['cable_crossover', 'lat_pull_down', 'pec_deck', 'smith_machine', 'treadmill']
 
 # Backend operation
